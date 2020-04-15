@@ -50,11 +50,7 @@ a {
     color: white;
 }
 
-.fab:hover,
-.fab:focus {
-    background: #FF7F50;
-    color: black;
-}
+
 
 .attribution a:hover,
 .attribution a:focus {
@@ -102,14 +98,50 @@ ul {
     padding: 0;
 }
 
+
+li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5em 0.43em 1.5em 0;
+}
+
+li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5em;
+    height: 2.5em;
+    border: 2px solid white;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+}
+li a:hover,
+li a:focus {
+    background: #FF7F50;
+    color: #ffffff;
+}
+
+
+/* Alternate social icon setup, although focus state doesn't work correctly
 .fab {
     width: 2.5em;
     height: 2.5em;
     border: 2px solid white;
     border-radius: 50%;
+    text-align: center;
     margin: 0 1em 0 0;
-    padding: 0.6em 0.4em 0.5em 0.65em;
+    padding-top: .6em;
 }
+
+.fab:hover,
+.fab:focus {
+    background: #FF7F50;
+    color: black;
+}
+*/
+
 
 
 /**Desktop Layout**/
