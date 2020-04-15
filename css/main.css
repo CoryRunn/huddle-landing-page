@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+}
+
+/*Typography*/
+
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: url('../images/bg-mobile.svg') no-repeat hsl(257, 40%, 49%);
+    background-size: cover;
+    color: white;
+}
+
+img {
+    color: white;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.06rem;
+    margin: 0;
+    padding-top: 2.5em;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.625em 4em;
+    background: white;
+    color: hsl(257, 40%, 49%);
+    border-radius: 1.56em;
+    text-decoration: none;
+    text-align: center;
+    margin: 1em;
+}
+
+.btn:hover,
+.btn:focus {
+    background: #FF7F50;
+    color: black;
+}
+
+a {
+    color: white;
+}
+
+li:hover,
+li:focus {
+    background: #FF7F50;
+    color: black;
+}
+
+.attribution a:hover,
+.attribution a:focus {
+    color: black;
+}
+
+
+
+/*Mobile style*/
+
+.container {
+    width: 80%;
+    max-width: 768px;
+    margin:0 auto;
+}
+
+header {
+    width: 100%;
+}
+
+header img {
+    width: 45%;
+    padding: 2em 0;
+    margin: 0;
+}
+
+.mock-up img {
+    width: 100%;
+    padding-top: 1em;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+ul {
+    display: inline-flex;
+    justify-content: center;
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5em;
+    height: 2.5em;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin: 1.5em 0.43em 1.5em 0;
+}
+
+
+/**Desktop Layout**/
+
+@media (min-width: 1200px) {
+    body {
+        background: url('../images/bg-desktop.svg') no-repeat hsl(257, 40%, 49%);
+        background-size: cover;
+    }
+
+    .container {
+        width: 95%;
+        max-width: 1310px;
+    }
+
+    header {
+        width: 40%;
+    }
+
+    section {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .mock-up {
+        width: 60%;
+        margin: 0 3em 0 0;
+        padding-top: 2em;
+    }
+
+    .description {
+        width: 30%;
+        text-align: left;
+        padding: 0;
+        margin-top: 0;
+    }
+
+    h1 {
+        font-size: 2rem;
+        font-weight: 700;
+       
+    }
+
+    .btn {
+        margin-left: 0;
+    }
+
+    ul {
+        justify-content: flex-end;
+    }
+}
+
+
+
